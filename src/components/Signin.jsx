@@ -17,7 +17,7 @@ const Signin = () => {
     }
     async function handleSignIn() {
         try {
-            const res = await axios.post('https://proj-backend-peach.vercel.app/login', {
+            const res = await axios.post('https://proj-backend-kappa.vercel.app/login', {
                 email: email,
                 password: password
             });

@@ -23,7 +23,7 @@ const Signup = () => {
     }
     async function handleSignUP() {
         try {
-            const res = await axios.post('https://proj-backend-peach.vercel.app/register', {
+            const res = await axios.post('https://proj-backend-kappa.vercel.app/register', {
                 name: name,
                 email: email,
                 password: password
