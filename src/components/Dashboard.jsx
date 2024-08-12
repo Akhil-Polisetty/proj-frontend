@@ -6,7 +6,7 @@ const Dashboard = () => {
     const [users, setUser] = useState([]);
     useEffect(() => {
     axios
-      .get("http://localhost:5000/getUsering", { withCredentials: true })
+      .get("https://proj-backend-peach.vercel.app/getUsering", { withCredentials: true })
       .then((users) => setUser(users.data))
       .catch((err) => console.log(err));
   }, []);
