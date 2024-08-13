@@ -10,13 +10,17 @@ const Dashboard = () => {
       .then((users) => setUser(users.data))
       .catch((err) => console.log(err));
   }, []);
-  console.log(users)
+  console.log("users",users)
   console.log("the data is ", users);
+
+  const navigate = useNavigate();
+
   function handleLogout() {
     localStorage.clear("userInfo");
     navigate("/");
   }
-  const navigate = useNavigate();
+
+  
   return (
     <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',width:'300px',gap:'10px'}}>
       <div
